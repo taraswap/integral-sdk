@@ -1,5 +1,5 @@
 {
-  "version": "0.12.5",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -32,8 +32,8 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@cryptoalgebra/integral-sdk",
-  "author": "cryptoalgebra",
+  "name": "@taraswap/integral-sdk",
+  "author": "taraswap",
   "module": "dist/integral-sdk.esm.js",
   "dependencies": {
     "@ethersproject/abi": "^5.7.0",

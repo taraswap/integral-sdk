@@ -1,10 +1,17 @@
-import { ChainId } from "../constants/chainIds";
+import { ChainId } from '../constants/chainIds';
 import { Token } from './Token';
 
 /**
  * Known WETH9 implementation addresses, used in our implementation of Ether#wrapped
  */
 export const WNATIVE: { [chainId: number]: Token } = {
+  [ChainId.Taraxa]: new Token(
+    ChainId.Taraxa,
+    '0x5d0fa4c5668e5809c83c95a7cef3a9dd7c68d4fe',
+    18,
+    'WTARA',
+    'WRAPPED TARA'
+  ),
   [ChainId.Goerli]: new Token(
     ChainId.Goerli,
     '0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6',
@@ -52,7 +59,7 @@ export const WNATIVE: { [chainId: number]: Token } = {
     '0x6e2542afc68a1697feb2810437df9409d3b93493',
     18,
     'WMNT',
-    'WRAPPED MNT',
+    'WRAPPED MNT'
   ),
   [ChainId.TelosTestnet]: new Token(
     ChainId.TelosTestnet,
@@ -172,5 +179,5 @@ export const WNATIVE: { [chainId: number]: Token } = {
     18,
     'WETH',
     'WRAPPED ETH'
-  )
+  ),
 };
